@@ -9,12 +9,12 @@ print(numbers_list)
 result = 0
 for index in numbers_list:
     number_sum = index
-    summa = 0
+    sum_check = 0
     while index > 0:
         digit = index % 10
-        summa += digit
+        sum_check += digit
         index //= 10
-    if summa % 7 == 0:
+    if sum_check % 7 == 0:
         result += number_sum
 print(result)
 
@@ -23,11 +23,11 @@ result = 0
 for index in numbers_list:
     index += 17
     number_sum = index
-    summa = 0
+    sum_check = 0
     while index > 0:
         digit = index % 10
-        summa += digit
+        sum_check += digit
         index //= 10
-    if summa % 7 == 0:
+    if sum_check % 7 == 0:
         result += number_sum
 print(result)
